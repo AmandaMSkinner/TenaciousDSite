@@ -1,0 +1,203 @@
+* {
+  /*Wanted to remove margins and padding*/
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /*Don't want people to see the magic behind the film-strip*/
+  font-family: Neucha, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:hover {
+  color: #e3e443;
+}
+a:visited {
+  color: #Ce4231;
+}
+nav {
+  width: 100vw;
+  height: 35px;
+  background-color: #e3e443;
+  margin-bottom: 10px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  height: auto;
+  padding-top: 10px;
+}
+
+nav > ul > li {
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: black;
+  color: #e3e443;
+  cursor: pointer;
+}
+#tribute-info,
+.ti {
+  padding: 0.5rem;
+}
+
+.tdTimeline {
+  border: solid black 5px;
+  margin: 15px;
+  background-color: #eeeee4;
+}
+
+#socials {
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 2em;
+}
+
+h1,
+figcaption,
+h3,
+footer {
+  text-align: center;
+  position: relative;
+}
+h1{
+  color:#Ce4231;
+}
+h2 {
+  padding-left: 2vw;
+  color:#Ce4231;
+}
+h3 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color:#7f984e
+}
+h1,
+h2,
+h3 {
+  font-family: Metal mania, open-sans;
+  letter-spacing: 3px; /*improving readability*/
+}
+#image {
+  width: 85%;
+  height: auto;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 25px;
+  padding: 10px;
+}
+#tdLogo {
+  width: 33%;
+  height: auto;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: -1.5rem;
+  border-radius: 25px;
+}
+
+#socials {
+  font-color: #36959b;
+}
+
+.black-strip {
+  background-color: black;
+  width: 100vw;
+  height: 17vw;
+  position: relative;
+  z-index: -1;
+}
+.film-img {
+  height: 12vw;
+  width: 15.5vw;
+  top: 2.5vw;
+  position: absolute;
+  z-index: 0;
+  border-radius: 12%;
+}
+.sq {
+  height: 12vw;
+  width: 15.5vw;
+  position: absolute;
+  background: radial-gradient(
+    circle,
+    transparent,
+    #33e28743,
+    #77e28743,
+    #e28743
+  ); /*I want rusty coloration on the edges of each image.*/
+  z-index: 1;
+  border-radius: 12%;
+  top: 2.5vw;
+}
+.sq:nth-of-type(1),
+#img-1 {
+  left: 1%;
+}
+.sq:nth-of-type(2),
+#img-2 {
+  left: 17.5%;
+}
+.sq:nth-of-type(3),
+#img-3 {
+  left: 34%;
+}
+.sq:nth-of-type(4),
+#img-4 {
+  left: 50.5%;
+}
+.sq:nth-of-type(5),
+#img-5 {
+  left: 67%;
+}
+.sq:nth-of-type(6),
+#img-6 {
+  left: 83.5%;
+}
+.sq:nth-of-type(7),
+#img-7 {
+  left: 100%;
+}
+.sq:nth-of-type(8),
+#img-8 {
+  left: 116.5%;
+}
+.sq:nth-of-type(9),
+#img-9 {
+  left: 133%;
+}
+.sq:nth-of-type(10),
+#img-10 {
+  left: 149.5%;
+}
+.sq:nth-of-type(11),
+#img-11 {
+  left: 166%;
+}
+.sq:nth-of-type(12),
+#img-12 {
+  left: 182.5%;
+}
+.sq,
+.film-img {
+  animation: film-slide 12s linear infinite;
+}
+@keyframes film-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-99vw);
+  }
+}
