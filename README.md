@@ -1,4 +1,5 @@
-# This is not the fan page of the best band in the world.  It is only a tribute.
+# Tribute Page Practice
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/AmandaSkinner/pen/gOKweqw](https://codepen.io/AmandaSkinner/pen/gOKweqw).
+A Pen created on CodePen.io as part of my Prework for Tech Elevator<br>
+[https://amandamskinner.github.io/TenaciousDSite/](https://amandamskinner.github.io/TenaciousDSite/).
 
